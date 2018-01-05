@@ -72,6 +72,7 @@
 /* Begin PBXFileReference section */
 		1F663200F809EFA54527A10B /* Pods_Movie_Review.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Review.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55912B36D26D0CA898726BA6 /* Pods-Movie Review.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Review.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review.debug.xcconfig"; sourceTree = "<group>"; };
+		8B0ACF541FFFD1B300F93118 /* Movie Review.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Movie Review.entitlements"; sourceTree = "<group>"; };
 		8B1A62051FFE926C005683E5 /* FCFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFeedModel.swift; sourceTree = "<group>"; };
 		8B1A62071FFE9275005683E5 /* FCFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFeedVC.swift; sourceTree = "<group>"; };
 		8B1A62081FFE9275005683E5 /* FCFeedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFeedTVCell.swift; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		8B1A62241FFF73C3005683E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1A62261FFF73C3005683E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1A62341FFF79AD005683E5 /* FCRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCRow.swift; sourceTree = "<group>"; };
-		8B1A623B1FFFB787005683E5 /* Movie Review.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Movie Review.entitlements"; sourceTree = "<group>"; };
 		8B1A623C1FFFB89A005683E5 /* MovieReviewWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MovieReviewWatch Extension.entitlements"; sourceTree = "<group>"; };
 		8B1A623D1FFFBEF0005683E5 /* FCFeedDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCFeedDetailVC.swift; sourceTree = "<group>"; };
 		8B3FCB371FFE90F70032F162 /* Movie Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +124,44 @@
 				E418904DD5C03155A2655C31 /* Pods-Movie Review.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B0ACF501FFFD01700F93118 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A62081FFE9275005683E5 /* FCFeedTVCell.swift */,
+				8B1A62051FFE926C005683E5 /* FCFeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B0ACF511FFFD02200F93118 /* ViewC */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A62071FFE9275005683E5 /* FCFeedVC.swift */,
+				8B1A623D1FFFBEF0005683E5 /* FCFeedDetailVC.swift */,
+				8B1A620B1FFF72D9005683E5 /* FCCriticsFeedVC.swift */,
+			);
+			path = ViewC;
+			sourceTree = "<group>";
+		};
+		8B0ACF521FFFD03000F93118 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				8B3FCB3A1FFE90F70032F162 /* AppDelegate.swift */,
+				8B3FCB461FFE90F70032F162 /* Info.plist */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		8B0ACF531FFFD03700F93118 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8B3FCB3E1FFE90F70032F162 /* Main.storyboard */,
+				8B3FCB431FFE90F70032F162 /* LaunchScreen.storyboard */,
+				8B3FCB411FFE90F70032F162 /* Assets.xcassets */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		8B1A62101FFF73C2005683E5 /* MovieReviewWatch */ = {
@@ -174,17 +212,11 @@
 		8B3FCB391FFE90F70032F162 /* Movie Review */ = {
 			isa = PBXGroup;
 			children = (
-				8B1A623B1FFFB787005683E5 /* Movie Review.entitlements */,
-				8B1A62051FFE926C005683E5 /* FCFeedModel.swift */,
-				8B3FCB3A1FFE90F70032F162 /* AppDelegate.swift */,
-				8B1A62081FFE9275005683E5 /* FCFeedTVCell.swift */,
-				8B1A62071FFE9275005683E5 /* FCFeedVC.swift */,
-				8B1A623D1FFFBEF0005683E5 /* FCFeedDetailVC.swift */,
-				8B3FCB3E1FFE90F70032F162 /* Main.storyboard */,
-				8B3FCB411FFE90F70032F162 /* Assets.xcassets */,
-				8B3FCB431FFE90F70032F162 /* LaunchScreen.storyboard */,
-				8B3FCB461FFE90F70032F162 /* Info.plist */,
-				8B1A620B1FFF72D9005683E5 /* FCCriticsFeedVC.swift */,
+				8B0ACF541FFFD1B300F93118 /* Movie Review.entitlements */,
+				8B0ACF501FFFD01700F93118 /* Model */,
+				8B0ACF511FFFD02200F93118 /* ViewC */,
+				8B0ACF531FFFD03700F93118 /* Interface */,
+				8B0ACF521FFFD03000F93118 /* Default */,
 			);
 			path = "Movie Review";
 			sourceTree = "<group>";
@@ -660,7 +692,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Movie Review/Movie Review.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 487D8YHE27;
-				INFOPLIST_FILE = "Movie Review/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Movie Review/Default/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Movie-Review";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -677,7 +709,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Movie Review/Movie Review.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 487D8YHE27;
-				INFOPLIST_FILE = "Movie Review/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Movie Review/Default/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Movie-Review";
 				PRODUCT_NAME = "$(TARGET_NAME)";
