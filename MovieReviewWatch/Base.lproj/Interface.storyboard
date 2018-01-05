@@ -26,7 +26,7 @@
                 <controller identifier="MovieReview" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MovieReviewWatch" customModuleProvider="target">
                     <items>
                         <label width="136" alignment="left" text="Films Review" textAlignment="center" id="KSS-z4-Koj">
-                            <fontDescription key="font" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
                         </label>
                         <label width="136" alignment="left" text=" Top Feed:" textAlignment="left" id="83g-gl-a2a">
                             <color key="textColor" red="0.30065302729999999" green="0.66668923309999994" blue="0.27149076239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

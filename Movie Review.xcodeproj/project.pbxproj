@@ -24,6 +24,9 @@
 		8B3FCB401FFE90F70032F162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FCB3E1FFE90F70032F162 /* Main.storyboard */; };
 		8B3FCB421FFE90F70032F162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FCB411FFE90F70032F162 /* Assets.xcassets */; };
 		8B3FCB451FFE90F70032F162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FCB431FFE90F70032F162 /* LaunchScreen.storyboard */; };
+		8B83B42C200018DE000B6E8D /* FCCriticsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B83B42B200018DE000B6E8D /* FCCriticsTVCell.swift */; };
+		8B83B42E20001BF9000B6E8D /* FCCriticsDetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B83B42D20001BF9000B6E8D /* FCCriticsDetailedVC.swift */; };
+		8B83B430200028BA000B6E8D /* FCSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B83B42F200028BA000B6E8D /* FCSearchVC.swift */; };
 		F08EFAE57EEA710CA4B497EA /* Pods_Movie_Review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F663200F809EFA54527A10B /* Pods_Movie_Review.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +98,9 @@
 		8B3FCB411FFE90F70032F162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3FCB441FFE90F70032F162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B3FCB461FFE90F70032F162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B83B42B200018DE000B6E8D /* FCCriticsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCriticsTVCell.swift; sourceTree = "<group>"; };
+		8B83B42D20001BF9000B6E8D /* FCCriticsDetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCriticsDetailedVC.swift; sourceTree = "<group>"; };
+		8B83B42F200028BA000B6E8D /* FCSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCSearchVC.swift; sourceTree = "<group>"; };
 		E418904DD5C03155A2655C31 /* Pods-Movie Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Review.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1A62081FFE9275005683E5 /* FCFeedTVCell.swift */,
+				8B83B42B200018DE000B6E8D /* FCCriticsTVCell.swift */,
 				8B1A62051FFE926C005683E5 /* FCFeedModel.swift */,
 			);
 			path = Model;
@@ -141,6 +148,8 @@
 				8B1A62071FFE9275005683E5 /* FCFeedVC.swift */,
 				8B1A623D1FFFBEF0005683E5 /* FCFeedDetailVC.swift */,
 				8B1A620B1FFF72D9005683E5 /* FCCriticsFeedVC.swift */,
+				8B83B42D20001BF9000B6E8D /* FCCriticsDetailedVC.swift */,
+				8B83B42F200028BA000B6E8D /* FCSearchVC.swift */,
 			);
 			path = ViewC;
 			sourceTree = "<group>";
@@ -447,10 +456,13 @@
 			files = (
 				8B1A620A1FFE9275005683E5 /* FCFeedTVCell.swift in Sources */,
 				8B1A62061FFE926C005683E5 /* FCFeedModel.swift in Sources */,
+				8B83B430200028BA000B6E8D /* FCSearchVC.swift in Sources */,
 				8B1A620C1FFF72D9005683E5 /* FCCriticsFeedVC.swift in Sources */,
+				8B83B42E20001BF9000B6E8D /* FCCriticsDetailedVC.swift in Sources */,
 				8B1A62091FFE9275005683E5 /* FCFeedVC.swift in Sources */,
 				8B1A623E1FFFBEF0005683E5 /* FCFeedDetailVC.swift in Sources */,
 				8B3FCB3B1FFE90F70032F162 /* AppDelegate.swift in Sources */,
+				8B83B42C200018DE000B6E8D /* FCCriticsTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
