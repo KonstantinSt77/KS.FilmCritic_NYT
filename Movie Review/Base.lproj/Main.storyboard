@@ -1,24 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CAb-sH-vEw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>TimesNewRomanPSMT</string>
+        </array>
+        <array key="TimesNewRomanBold.ttf">
+            <string>TimesNewRomanPS-BoldMT</string>
+        </array>
+        <array key="TimesNewRomanItalic.ttf">
+            <string>TimesNewRomanPS-ItalicMT</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Film Reviews-->
+        <scene sceneID="wMp-ln-M6Y">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="rdK-x1-Zsw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Film Reviews" id="8ds-zz-XVo"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L68-6f-cKf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1980366409" green="0.19804224370000001" blue="0.19803926350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lEi-Xk-mHH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="aWO-54-yzR" kind="relationship" relationship="rootViewController" id="boh-4c-s11"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JYt-kc-p4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="-468"/>
+        </scene>
+        <!--Film Reviews-->
+        <scene sceneID="Fu2-iS-0tG">
+            <objects>
+                <viewController id="aWO-54-yzR" customClass="FCFeedVC" customModule="Movie_Review" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ViH-9K-vOM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.1980366409" green="0.19804224370000001" blue="0.19803926350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="143" id="eeo-sf-gnF" customClass="FCFeedTVCell" customModule="Movie_Review" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="143"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eeo-sf-gnF" id="41a-vx-ME3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review: ‘Jim &amp; Andy,’ When Carrey Became Kaufman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-CW-Lec">
+                                            <rect key="frame" x="8" y="11" width="201" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="uZH-hQ-MNa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="16"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6Y-jF-9uR">
+                                            <rect key="frame" x="217" y="11" width="150" height="103"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="nIc-0f-eye"/>
+                                                <constraint firstAttribute="height" constant="103" id="p5U-P8-KdM"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkG-Ln-WvT">
+                                            <rect key="frame" x="8" y="60" width="201" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="54" id="dWH-Cd-ldG"/>
+                                            </constraints>
+                                            <string key="text">The laughs in the new documentary about Jim Carrey and Andy Kaufman don’t just pop, they also gush. The giggles start with the playful title: “Jim &amp; Andy: The Great Beyond — Featuring a Very </string>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                            <color key="textColor" red="0.88603870787966188" green="0.88943349220103984" blue="0.88943349220103984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BY MANOHLA DARGIS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7M-hJ-EIx">
+                                            <rect key="frame" x="8" y="119" width="201" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="MyK-6Y-XlF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="12"/>
+                                            <color key="textColor" red="0.45341653344532185" green="0.90939956820762569" blue="0.45846703634870112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="d6Y-jF-9uR" firstAttribute="leading" secondItem="z7X-CW-Lec" secondAttribute="trailing" constant="8" id="5RO-qt-4sr"/>
+                                        <constraint firstItem="nkG-Ln-WvT" firstAttribute="leading" secondItem="41a-vx-ME3" secondAttribute="leading" constant="8" id="HiE-Jj-uc9"/>
+                                        <constraint firstItem="nkG-Ln-WvT" firstAttribute="top" secondItem="z7X-CW-Lec" secondAttribute="bottom" constant="5" id="Hup-eW-plg"/>
+                                        <constraint firstItem="Z7M-hJ-EIx" firstAttribute="top" secondItem="nkG-Ln-WvT" secondAttribute="bottom" constant="5" id="K4e-Cg-Qa1"/>
+                                        <constraint firstItem="d6Y-jF-9uR" firstAttribute="top" secondItem="41a-vx-ME3" secondAttribute="top" constant="11" id="QXT-qz-Ezf"/>
+                                        <constraint firstItem="z7X-CW-Lec" firstAttribute="top" secondItem="41a-vx-ME3" secondAttribute="top" constant="11" id="UCp-dO-LPj"/>
+                                        <constraint firstItem="Z7M-hJ-EIx" firstAttribute="leading" secondItem="41a-vx-ME3" secondAttribute="leading" constant="8" id="V8H-fC-Yyu"/>
+                                        <constraint firstAttribute="trailing" secondItem="d6Y-jF-9uR" secondAttribute="trailing" constant="8" id="gcx-nI-rWq"/>
+                                        <constraint firstItem="d6Y-jF-9uR" firstAttribute="leading" secondItem="Z7M-hJ-EIx" secondAttribute="trailing" constant="8" id="sZ2-nh-V2j"/>
+                                        <constraint firstItem="d6Y-jF-9uR" firstAttribute="leading" secondItem="nkG-Ln-WvT" secondAttribute="trailing" constant="8" id="xDF-Ui-cCR"/>
+                                        <constraint firstItem="z7X-CW-Lec" firstAttribute="leading" secondItem="41a-vx-ME3" secondAttribute="leading" constant="8" id="yf0-rY-GF4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.1980366409" green="0.19804224370000001" blue="0.19803926350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="reviewAuthor" destination="Z7M-hJ-EIx" id="fGy-G8-ggf"/>
+                                    <outlet property="reviewDescription" destination="nkG-Ln-WvT" id="eXz-kH-4yP"/>
+                                    <outlet property="reviewImage" destination="d6Y-jF-9uR" id="IjN-KC-WKE"/>
+                                    <outlet property="reviewTitle" destination="z7X-CW-Lec" id="tN4-Zb-C7E"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aWO-54-yzR" id="50l-qE-ETG"/>
+                            <outlet property="delegate" destination="aWO-54-yzR" id="hVZ-pB-9F1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Film Reviews" id="Rae-fK-ij3"/>
+                    <connections>
+                        <outlet property="tableView" destination="ViH-9K-vOM" id="m1H-hr-zAR"/>
+                        <segue destination="Aqj-bw-Ftr" kind="show" identifier="showDetail" id="lA8-o2-gmC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUp-CW-M7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="-468.21589205397305"/>
+        </scene>
+        <!--Review-->
+        <scene sceneID="zGK-K1-cMI">
+            <objects>
+                <viewController title="Review" id="Aqj-bw-Ftr" customClass="FCFeedDetailVC" customModule="Movie_Review" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EG6-d9-Eyj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmn-EP-r7T">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.1980366409" green="0.19804224370000001" blue="0.19803926350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1980366409" green="0.19804224370000001" blue="0.19803926350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tmn-EP-r7T" firstAttribute="top" secondItem="okf-wA-6dJ" secondAttribute="top" id="PpC-OR-Gib"/>
+                            <constraint firstItem="tmn-EP-r7T" firstAttribute="leading" secondItem="okf-wA-6dJ" secondAttribute="leading" id="ase-h9-ZRW"/>
+                            <constraint firstItem="okf-wA-6dJ" firstAttribute="bottom" secondItem="tmn-EP-r7T" secondAttribute="bottom" id="bS3-Nb-VJ5"/>
+                            <constraint firstItem="okf-wA-6dJ" firstAttribute="trailing" secondItem="tmn-EP-r7T" secondAttribute="trailing" id="cMC-Qw-6Nj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="okf-wA-6dJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="myWebView" destination="tmn-EP-r7T" id="9ys-B7-b6L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHr-kd-qqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-468"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Hpd-c6-vx6">
+            <objects>
+                <tabBarController id="CAb-sH-vEw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L6Y-BS-P82">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.1980366409" green="0.19804224370000001" blue="0.19803926350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.15598373730000001" green="0.67345916380000004" blue="0.35920319690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rdK-x1-Zsw" kind="relationship" relationship="viewControllers" id="YC9-HP-V2M"/>
+                        <segue destination="aVt-eC-p4B" kind="relationship" relationship="viewControllers" id="WTb-SF-ykC"/>
+                        <segue destination="nfb-A3-vGw" kind="relationship" relationship="viewControllers" id="e1s-q9-mQD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzj-fz-yqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="230"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="WlP-MP-fKR">
+            <objects>
+                <navigationController id="nfb-A3-vGw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="EwU-cQ-SJK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oMf-To-Ns6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rfl-7a-4EX" kind="relationship" relationship="rootViewController" id="Wpc-PL-hTJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMS-nA-hTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="908"/>
+        </scene>
+        <!--Film Critics-->
+        <scene sceneID="Fmi-DD-8GJ">
+            <objects>
+                <navigationController id="aVt-eC-p4B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Film Critics" id="Ud0-TJ-huX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xce-gw-rCj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.19803664088249207" green="0.19804224371910095" blue="0.19803926348686218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2SK-Vt-2D4" kind="relationship" relationship="rootViewController" id="SbN-Jh-oTt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWf-Yp-VqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="230"/>
+        </scene>
+        <!--Film Critics-->
+        <scene sceneID="sxT-q2-VTp">
+            <objects>
+                <viewController id="2SK-Vt-2D4" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="T8B-gC-qMy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="c1C-DC-fjL">
+                                <rect key="frame" x="0.0" y="28" width="375" height="130"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c1C-DC-fjL" id="sgH-aa-5R1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Film Critics" id="goU-2j-7aO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMN-Uq-hrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="229.83508245877064"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d0E-DV-f28">
+            <objects>
+                <viewController id="hAR-33-TMi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3U4-AD-AsZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9Ps-iQ-5lH"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14r-bu-mtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1385" y="230"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="EiW-hk-UiG">
+            <objects>
+                <viewController id="Rfl-7a-4EX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Y1-2F-eSo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qFK-Hw-M3P"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="cxf-5a-QH7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mL4-iu-WIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="907"/>
         </scene>
     </scenes>
 </document>

@@ -7,39 +7,157 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1A62061FFE926C005683E5 /* FCFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62051FFE926C005683E5 /* FCFeedModel.swift */; };
+		8B1A62091FFE9275005683E5 /* FCFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62071FFE9275005683E5 /* FCFeedVC.swift */; };
+		8B1A620A1FFE9275005683E5 /* FCFeedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62081FFE9275005683E5 /* FCFeedTVCell.swift */; };
+		8B1A620C1FFF72D9005683E5 /* FCCriticsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A620B1FFF72D9005683E5 /* FCCriticsFeedVC.swift */; };
+		8B1A62131FFF73C2005683E5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A62111FFF73C2005683E5 /* Interface.storyboard */; };
+		8B1A62151FFF73C2005683E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A62141FFF73C2005683E5 /* Assets.xcassets */; };
+		8B1A621C1FFF73C2005683E5 /* MovieReviewWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B1A621B1FFF73C2005683E5 /* MovieReviewWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B1A62211FFF73C3005683E5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62201FFF73C3005683E5 /* InterfaceController.swift */; };
+		8B1A62231FFF73C3005683E5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62221FFF73C3005683E5 /* ExtensionDelegate.swift */; };
+		8B1A62251FFF73C3005683E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A62241FFF73C3005683E5 /* Assets.xcassets */; };
+		8B1A62291FFF73C3005683E5 /* MovieReviewWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B1A620F1FFF73C2005683E5 /* MovieReviewWatch.app */; };
+		8B1A62351FFF79AD005683E5 /* FCRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A62341FFF79AD005683E5 /* FCRow.swift */; };
+		8B1A623E1FFFBEF0005683E5 /* FCFeedDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A623D1FFFBEF0005683E5 /* FCFeedDetailVC.swift */; };
 		8B3FCB3B1FFE90F70032F162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FCB3A1FFE90F70032F162 /* AppDelegate.swift */; };
-		8B3FCB3D1FFE90F70032F162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FCB3C1FFE90F70032F162 /* ViewController.swift */; };
 		8B3FCB401FFE90F70032F162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FCB3E1FFE90F70032F162 /* Main.storyboard */; };
 		8B3FCB421FFE90F70032F162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FCB411FFE90F70032F162 /* Assets.xcassets */; };
 		8B3FCB451FFE90F70032F162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3FCB431FFE90F70032F162 /* LaunchScreen.storyboard */; };
+		F08EFAE57EEA710CA4B497EA /* Pods_Movie_Review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F663200F809EFA54527A10B /* Pods_Movie_Review.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8B1A621D1FFF73C2005683E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3FCB2F1FFE90F70032F162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1A621A1FFF73C2005683E5;
+			remoteInfo = "MovieReviewWatch Extension";
+		};
+		8B1A62271FFF73C3005683E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3FCB2F1FFE90F70032F162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1A620E1FFF73C2005683E5;
+			remoteInfo = MovieReviewWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B1A622D1FFF73C3005683E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B1A621C1FFF73C2005683E5 /* MovieReviewWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1A62311FFF73C3005683E5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8B1A62291FFF73C3005683E5 /* MovieReviewWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1F663200F809EFA54527A10B /* Pods_Movie_Review.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Review.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55912B36D26D0CA898726BA6 /* Pods-Movie Review.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Review.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review.debug.xcconfig"; sourceTree = "<group>"; };
+		8B1A62051FFE926C005683E5 /* FCFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFeedModel.swift; sourceTree = "<group>"; };
+		8B1A62071FFE9275005683E5 /* FCFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFeedVC.swift; sourceTree = "<group>"; };
+		8B1A62081FFE9275005683E5 /* FCFeedTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFeedTVCell.swift; sourceTree = "<group>"; };
+		8B1A620B1FFF72D9005683E5 /* FCCriticsFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCriticsFeedVC.swift; sourceTree = "<group>"; };
+		8B1A620F1FFF73C2005683E5 /* MovieReviewWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieReviewWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1A62121FFF73C2005683E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B1A62141FFF73C2005683E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B1A62161FFF73C2005683E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1A621B1FFF73C2005683E5 /* MovieReviewWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MovieReviewWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1A62201FFF73C3005683E5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8B1A62221FFF73C3005683E5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8B1A62241FFF73C3005683E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B1A62261FFF73C3005683E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1A62341FFF79AD005683E5 /* FCRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCRow.swift; sourceTree = "<group>"; };
+		8B1A623B1FFFB787005683E5 /* Movie Review.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Movie Review.entitlements"; sourceTree = "<group>"; };
+		8B1A623C1FFFB89A005683E5 /* MovieReviewWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MovieReviewWatch Extension.entitlements"; sourceTree = "<group>"; };
+		8B1A623D1FFFBEF0005683E5 /* FCFeedDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCFeedDetailVC.swift; sourceTree = "<group>"; };
 		8B3FCB371FFE90F70032F162 /* Movie Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3FCB3A1FFE90F70032F162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B3FCB3C1FFE90F70032F162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B3FCB3F1FFE90F70032F162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B3FCB411FFE90F70032F162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3FCB441FFE90F70032F162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B3FCB461FFE90F70032F162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E418904DD5C03155A2655C31 /* Pods-Movie Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Review.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8B3FCB341FFE90F70032F162 /* Frameworks */ = {
+		8B1A62181FFF73C2005683E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B3FCB341FFE90F70032F162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08EFAE57EEA710CA4B497EA /* Pods_Movie_Review.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233C32EDD5A7F2E8F89B73FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55912B36D26D0CA898726BA6 /* Pods-Movie Review.debug.xcconfig */,
+				E418904DD5C03155A2655C31 /* Pods-Movie Review.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B1A62101FFF73C2005683E5 /* MovieReviewWatch */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A62111FFF73C2005683E5 /* Interface.storyboard */,
+				8B1A62141FFF73C2005683E5 /* Assets.xcassets */,
+				8B1A62161FFF73C2005683E5 /* Info.plist */,
+			);
+			path = MovieReviewWatch;
+			sourceTree = "<group>";
+		};
+		8B1A621F1FFF73C2005683E5 /* MovieReviewWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A623C1FFFB89A005683E5 /* MovieReviewWatch Extension.entitlements */,
+				8B1A62201FFF73C3005683E5 /* InterfaceController.swift */,
+				8B1A62221FFF73C3005683E5 /* ExtensionDelegate.swift */,
+				8B1A62341FFF79AD005683E5 /* FCRow.swift */,
+				8B1A62241FFF73C3005683E5 /* Assets.xcassets */,
+				8B1A62261FFF73C3005683E5 /* Info.plist */,
+			);
+			path = "MovieReviewWatch Extension";
+			sourceTree = "<group>";
+		};
 		8B3FCB2E1FFE90F70032F162 = {
 			isa = PBXGroup;
 			children = (
 				8B3FCB391FFE90F70032F162 /* Movie Review */,
+				8B1A62101FFF73C2005683E5 /* MovieReviewWatch */,
+				8B1A621F1FFF73C2005683E5 /* MovieReviewWatch Extension */,
 				8B3FCB381FFE90F70032F162 /* Products */,
+				233C32EDD5A7F2E8F89B73FE /* Pods */,
+				EEAA46749E6685F6AA2C30C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				8B3FCB371FFE90F70032F162 /* Movie Review.app */,
+				8B1A620F1FFF73C2005683E5 /* MovieReviewWatch.app */,
+				8B1A621B1FFF73C2005683E5 /* MovieReviewWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,30 +174,82 @@
 		8B3FCB391FFE90F70032F162 /* Movie Review */ = {
 			isa = PBXGroup;
 			children = (
+				8B1A623B1FFFB787005683E5 /* Movie Review.entitlements */,
+				8B1A62051FFE926C005683E5 /* FCFeedModel.swift */,
 				8B3FCB3A1FFE90F70032F162 /* AppDelegate.swift */,
-				8B3FCB3C1FFE90F70032F162 /* ViewController.swift */,
+				8B1A62081FFE9275005683E5 /* FCFeedTVCell.swift */,
+				8B1A62071FFE9275005683E5 /* FCFeedVC.swift */,
+				8B1A623D1FFFBEF0005683E5 /* FCFeedDetailVC.swift */,
 				8B3FCB3E1FFE90F70032F162 /* Main.storyboard */,
 				8B3FCB411FFE90F70032F162 /* Assets.xcassets */,
 				8B3FCB431FFE90F70032F162 /* LaunchScreen.storyboard */,
 				8B3FCB461FFE90F70032F162 /* Info.plist */,
+				8B1A620B1FFF72D9005683E5 /* FCCriticsFeedVC.swift */,
 			);
 			path = "Movie Review";
+			sourceTree = "<group>";
+		};
+		EEAA46749E6685F6AA2C30C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F663200F809EFA54527A10B /* Pods_Movie_Review.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B3FCB361FFE90F70032F162 /* Movie Review */ = {
+		8B1A620E1FFF73C2005683E5 /* MovieReviewWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B3FCB491FFE90F70032F162 /* Build configuration list for PBXNativeTarget "Movie Review" */;
+			buildConfigurationList = 8B1A622E1FFF73C3005683E5 /* Build configuration list for PBXNativeTarget "MovieReviewWatch" */;
 			buildPhases = (
-				8B3FCB331FFE90F70032F162 /* Sources */,
-				8B3FCB341FFE90F70032F162 /* Frameworks */,
-				8B3FCB351FFE90F70032F162 /* Resources */,
+				8B1A620D1FFF73C2005683E5 /* Resources */,
+				8B1A622D1FFF73C3005683E5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B1A621E1FFF73C2005683E5 /* PBXTargetDependency */,
+			);
+			name = MovieReviewWatch;
+			productName = MovieReviewWatch;
+			productReference = 8B1A620F1FFF73C2005683E5 /* MovieReviewWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8B1A621A1FFF73C2005683E5 /* MovieReviewWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1A622A1FFF73C3005683E5 /* Build configuration list for PBXNativeTarget "MovieReviewWatch Extension" */;
+			buildPhases = (
+				8B1A62171FFF73C2005683E5 /* Sources */,
+				8B1A62181FFF73C2005683E5 /* Frameworks */,
+				8B1A62191FFF73C2005683E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MovieReviewWatch Extension";
+			productName = "MovieReviewWatch Extension";
+			productReference = 8B1A621B1FFF73C2005683E5 /* MovieReviewWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		8B3FCB361FFE90F70032F162 /* Movie Review */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3FCB491FFE90F70032F162 /* Build configuration list for PBXNativeTarget "Movie Review" */;
+			buildPhases = (
+				0D64EAD479C78FDA72DA7565 /* [CP] Check Pods Manifest.lock */,
+				8B3FCB331FFE90F70032F162 /* Sources */,
+				8B3FCB341FFE90F70032F162 /* Frameworks */,
+				8B3FCB351FFE90F70032F162 /* Resources */,
+				6C5000A077A9BCAB9A295137 /* [CP] Embed Pods Frameworks */,
+				3774A88A5FA026789808F3EE /* [CP] Copy Pods Resources */,
+				8B1A62311FFF73C3005683E5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B1A62281FFF73C3005683E5 /* PBXTargetDependency */,
 			);
 			name = "Movie Review";
 			productName = "Movie Review";
@@ -94,9 +266,27 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = SKS;
 				TargetAttributes = {
+					8B1A620E1FFF73C2005683E5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8B1A621A1FFF73C2005683E5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					8B3FCB361FFE90F70032F162 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,11 +304,30 @@
 			projectRoot = "";
 			targets = (
 				8B3FCB361FFE90F70032F162 /* Movie Review */,
+				8B1A620E1FFF73C2005683E5 /* MovieReviewWatch */,
+				8B1A621A1FFF73C2005683E5 /* MovieReviewWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8B1A620D1FFF73C2005683E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1A62151FFF73C2005683E5 /* Assets.xcassets in Resources */,
+				8B1A62131FFF73C2005683E5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1A62191FFF73C2005683E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1A62251FFF73C3005683E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B3FCB351FFE90F70032F162 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,19 +340,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D64EAD479C78FDA72DA7565 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movie Review-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3774A88A5FA026789808F3EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C5000A077A9BCAB9A295137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8B1A62171FFF73C2005683E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1A62351FFF79AD005683E5 /* FCRow.swift in Sources */,
+				8B1A62231FFF73C3005683E5 /* ExtensionDelegate.swift in Sources */,
+				8B1A62211FFF73C3005683E5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B3FCB331FFE90F70032F162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B3FCB3D1FFE90F70032F162 /* ViewController.swift in Sources */,
+				8B1A620A1FFE9275005683E5 /* FCFeedTVCell.swift in Sources */,
+				8B1A62061FFE926C005683E5 /* FCFeedModel.swift in Sources */,
+				8B1A620C1FFF72D9005683E5 /* FCCriticsFeedVC.swift in Sources */,
+				8B1A62091FFE9275005683E5 /* FCFeedVC.swift in Sources */,
+				8B1A623E1FFFBEF0005683E5 /* FCFeedDetailVC.swift in Sources */,
 				8B3FCB3B1FFE90F70032F162 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8B1A621E1FFF73C2005683E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1A621A1FFF73C2005683E5 /* MovieReviewWatch Extension */;
+			targetProxy = 8B1A621D1FFF73C2005683E5 /* PBXContainerItemProxy */;
+		};
+		8B1A62281FFF73C3005683E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1A620E1FFF73C2005683E5 /* MovieReviewWatch */;
+			targetProxy = 8B1A62271FFF73C3005683E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		8B1A62111FFF73C2005683E5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1A62121FFF73C2005683E5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		8B3FCB3E1FFE90F70032F162 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -163,6 +465,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B1A622B1FFF73C3005683E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MovieReviewWatch Extension/MovieReviewWatch Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 487D8YHE27;
+				INFOPLIST_FILE = "MovieReviewWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Movie-Review.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		8B1A622C1FFF73C3005683E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MovieReviewWatch Extension/MovieReviewWatch Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 487D8YHE27;
+				INFOPLIST_FILE = "MovieReviewWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Movie-Review.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		8B1A622F1FFF73C3005683E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 487D8YHE27;
+				IBSC_MODULE = MovieReviewWatch_Extension;
+				INFOPLIST_FILE = MovieReviewWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Movie-Review.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		8B1A62301FFF73C3005683E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 487D8YHE27;
+				IBSC_MODULE = MovieReviewWatch_Extension;
+				INFOPLIST_FILE = MovieReviewWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Movie-Review.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 		8B3FCB471FFE90F70032F162 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -272,8 +654,10 @@
 		};
 		8B3FCB4A1FFE90F70032F162 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55912B36D26D0CA898726BA6 /* Pods-Movie Review.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Movie Review/Movie Review.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 487D8YHE27;
 				INFOPLIST_FILE = "Movie Review/Info.plist";
@@ -287,8 +671,10 @@
 		};
 		8B3FCB4B1FFE90F70032F162 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E418904DD5C03155A2655C31 /* Pods-Movie Review.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Movie Review/Movie Review.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 487D8YHE27;
 				INFOPLIST_FILE = "Movie Review/Info.plist";
@@ -303,6 +689,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B1A622A1FFF73C3005683E5 /* Build configuration list for PBXNativeTarget "MovieReviewWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1A622B1FFF73C3005683E5 /* Debug */,
+				8B1A622C1FFF73C3005683E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1A622E1FFF73C3005683E5 /* Build configuration list for PBXNativeTarget "MovieReviewWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1A622F1FFF73C3005683E5 /* Debug */,
+				8B1A62301FFF73C3005683E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8B3FCB321FFE90F70032F162 /* Build configuration list for PBXProject "Movie Review" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
