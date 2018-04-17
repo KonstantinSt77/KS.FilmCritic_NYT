@@ -27,6 +27,7 @@
 		8B83B42C200018DE000B6E8D /* FCCriticsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B83B42B200018DE000B6E8D /* FCCriticsTVCell.swift */; };
 		8B83B42E20001BF9000B6E8D /* FCCriticsDetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B83B42D20001BF9000B6E8D /* FCCriticsDetailedVC.swift */; };
 		8B83B430200028BA000B6E8D /* FCSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B83B42F200028BA000B6E8D /* FCSearchVC.swift */; };
+		8BDC9C77208631440092E33F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC9C76208631440092E33F /* README.md */; };
 		F08EFAE57EEA710CA4B497EA /* Pods_Movie_Review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F663200F809EFA54527A10B /* Pods_Movie_Review.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		8B83B42B200018DE000B6E8D /* FCCriticsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCriticsTVCell.swift; sourceTree = "<group>"; };
 		8B83B42D20001BF9000B6E8D /* FCCriticsDetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCriticsDetailedVC.swift; sourceTree = "<group>"; };
 		8B83B42F200028BA000B6E8D /* FCSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCSearchVC.swift; sourceTree = "<group>"; };
+		8BDC9C76208631440092E33F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		E418904DD5C03155A2655C31 /* Pods-Movie Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Review.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movie Review/Pods-Movie Review.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +159,7 @@
 		8B0ACF521FFFD03000F93118 /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				8BDC9C76208631440092E33F /* README.md */,
 				8B3FCB3A1FFE90F70032F162 /* AppDelegate.swift */,
 				8B3FCB461FFE90F70032F162 /* Info.plist */,
 			);
@@ -375,6 +378,7 @@
 			files = (
 				8B3FCB451FFE90F70032F162 /* LaunchScreen.storyboard in Resources */,
 				8B3FCB421FFE90F70032F162 /* Assets.xcassets in Resources */,
+				8BDC9C77208631440092E33F /* README.md in Resources */,
 				8B3FCB401FFE90F70032F162 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
